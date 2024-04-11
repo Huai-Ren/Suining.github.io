@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>遂宁公交线网图</title>
@@ -9,8 +8,21 @@
 				height: 600%;
 			}
 		</style>
+		<script>
+			window.onresize = function() {
+  			var body = document.getElementsByTagName("body")[0];
+  			if (window.innerWidth > someWidth) {
+    			body.style.width = "600%";
+    			body.style.height = "600%";
+  			} else {
+    			body.style.width = "100%";
+    			body.style.height = "100%";
+  			}
+			}
+		</script>
 	</head>
 	<body>
+		
 		<object type="image/svg+xml" data="底图线路20240403.svg"></object>
 	</body>
 </html>
